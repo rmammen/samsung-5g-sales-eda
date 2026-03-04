@@ -48,6 +48,7 @@ plt.xlabel("Region")
 plt.ylabel("Average Units Sold")
 plt.xticks(rotation=30, ha="right")
 plt.tight_layout()
+
 plt.show()
 
 # Calculate the overall mean units sold for 5G and non-5G phones
@@ -68,6 +69,7 @@ plt.title("Average Units Sold (Globally): 5G vs Non-5G")
 plt.xlabel("5G Capability")
 plt.ylabel("Average Units Sold")
 plt.tight_layout()
+
 plt.show()
 
 # Figure 3: Boxplot of units sold distribution for 5G vs non-5G phones

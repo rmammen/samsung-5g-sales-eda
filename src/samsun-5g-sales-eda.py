@@ -83,7 +83,7 @@ plt.tight_layout()
 
 plt.show()
 
-# \Figure 4: Scatterplot to analyze the relationship between regional 5G coverage and units sold
+# Figure 4: Scatterplot to analyze the relationship between regional 5G coverage and units sold
 plt.figure(figsize=(8,6))
 
 sns.scatterplot(
@@ -91,8 +91,8 @@ sns.scatterplot(
     x="regional_5g_coverage_percent",
     y="units_sold",
     hue="5G_capability",
-    s=80,          # larger points
-    alpha=0.7      # transparency so overlaps are visible
+    s=80,         
+    alpha=0.7      
 )
 
 plt.title("Relationship Between 5G Coverage and Units Sold")

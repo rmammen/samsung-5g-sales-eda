@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns 
 
 # read dataset into a pandas DataFrame
-df = pd.read_csv('Expanded_Dataset.csv')
+df = pd.read_csv('Cleaned_Samsung_5G_Dataset.csv')
 
 df.info()
 df.head()

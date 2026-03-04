@@ -17,21 +17,9 @@ Key variables:
 - Revenue
 
 ## Key Findings
-
 - 5G smartphones sold **33% more units on average** than non-5G devices.
 - The sales advantage appears across **all regions**.
 - Median sales for 5G devices are consistently higher.
-
-## Visualizations
-
-### Global Comparison
-![Global Sales](outputs/figures/fig1_units_5g_vs_non5g.png)
-
-### Regional Comparison
-![Regional Sales](outputs/figures/fig2_units_by_region.png)
-
-### Distribution of Sales
-![Distribution](outputs/figures/fig3_distribution_units.png)
 
 ## Tools Used
 - Python

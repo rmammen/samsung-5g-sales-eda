@@ -2,15 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt 
 import seaborn as sns 
 
-# read dataset into a pandas DataFrame
+# Read dataset into a pandas DataFrame
 df = pd.read_csv('Cleaned_Samsung_5G_Dataset.csv')
-
-df.info()
-df.head()
-df.columns
-    
-df["5G_capability"].value_counts()
-df["units_sold"].describe()
 
 # Analyze the relationship between 5G capability and units sold
 df.groupby("5G_capability")["units_sold"].agg(["count", "mean", "median", "std"])
@@ -31,6 +24,7 @@ region_summary = (
     .reset_index()
     
 )
+
 region_summary.head().unstack()
     
 columns = ['release_year', '5G_capability', 'units_sold', 'region']
@@ -56,7 +50,7 @@ overall_means = df.groupby("5G_capability")["units_sold"].mean().reset_index()
 
 overall_means
 
-#figure 2: Overall average units sold for 5G vs non-5G phones
+# Figure 2: Overall average units sold for 5G vs non-5G phones
 plt.figure(figsize=(8,6))
 sns.barplot(
     data=overall_means,
@@ -89,7 +83,7 @@ plt.tight_layout()
 
 plt.show()
 
-# EXTRA - Figure 4:scatterplot to analyze the relationship between regional 5G coverage and units sold
+# \Figure 4: Scatterplot to analyze the relationship between regional 5G coverage and units sold
 plt.figure(figsize=(8,6))
 
 sns.scatterplot(

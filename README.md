@@ -38,6 +38,5 @@ Key variables:
 - Pandas
 - Matplotlib
 - Seaborn
-- Jupyter Notebook
 
 ## Project Structure

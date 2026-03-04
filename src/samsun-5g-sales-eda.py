@@ -5,8 +5,6 @@ import seaborn as sns
 # read dataset into a pandas DataFrame
 df = pd.read_csv('Expanded_Dataset.csv')
 
-
-    #
 df.info()
 df.head()
 df.columns
@@ -23,8 +21,6 @@ mean_values = df.groupby("5G_capability")["units_sold"].mean()
 difference = mean_values["Yes"] - mean_values["No"]
 percent_increase = (difference / mean_values["No"]) * 100
 difference, percent_increase
-
-
 
 # Calculate the regional difference in units sold for 5G and non-5G phones
 df.groupby(["region", "5G_capability"])["units_sold"].mean().unstack()
@@ -57,8 +53,8 @@ plt.show()
 # Calculate the overall mean units sold for 5G and non-5G phones
 overall_means = df.groupby("5G_capability")["units_sold"].mean().reset_index()
 
-
 overall_means
+
 #figure 2: Overall average units sold for 5G vs non-5G phones
 plt.figure(figsize=(8,6))
 sns.barplot(
@@ -90,7 +86,6 @@ plt.ylabel("Units Sold")
 plt.tight_layout()
 
 plt.show()
-
 
 # EXTRA - Figure 4:scatterplot to analyze the relationship between regional 5G coverage and units sold
 plt.figure(figsize=(8,6))
